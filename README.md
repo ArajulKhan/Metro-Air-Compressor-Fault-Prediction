@@ -8,7 +8,7 @@ A machine learning project that predicts faults in a metro train's air compresso
 
 **MetroPT-3** (air compressor of a metro train, Porto, Feb-Aug 2020), about 1.5M rows sampled every 10 seconds. Available from the UCI Machine Learning Repository.
 
-The dataset is **not included** in this repo (file is too large for GitHub). Download it and place it in the project root as `MetroPT3_AirCompressor_.csv`.
+The dataset is **not included** in this repo (file is too large for GitHub). Download it and place it in the project root as `MetroPT3(AirCompressor).csv`.
 
 | Type | Features |
 |---|---|
@@ -20,7 +20,7 @@ The dataset is **not included** in this repo (file is too large for GitHub). Dow
 ## Project structure
 
 ```
-metropt3-fault-prediction/
+Metro-Air-Compressor-Fault-Prediction/
 ├── app.py                 # Streamlit web app
 ├── MetroPT3.ipynb         # EDA, labelling, training, evaluation
 ├── rf_model.pkl           # Trained Random Forest (created by the notebook)
@@ -42,17 +42,18 @@ See [docs/SYSTEM_DESIGN.md](docs/SYSTEM_DESIGN.md) for details.
 ## Setup & run
 
 ```bash
-git clone https://github.com/<your-username>/metropt3-fault-prediction.git
-cd metropt3-fault-prediction
+git clone https://github.com/<your-username>/Metro-Air-Compressor-Fault-prediction.git
+cd Metro-Air-Compressor-Fault-prediction
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-1. Put `MetroPT3_AirCompressor_.csv` in the project root.
-2. Open and run all cells of `MetroPT3.ipynb` (this creates `rf_model.pkl` and `columns.pkl`).
-3. Start the app:
+1. Put `MetroPT3(AirCompressor).csv` in the project root.
+   dataset link : https://archive.ics.uci.edu/static/public/791/metropt+3+dataset.zip
+3. Open and run all cells of `MetroPT3.ipynb` (this creates `rf_model.pkl` and `columns.pkl`).
+4. Start the app:
 
 ```bash
 streamlit run app.py

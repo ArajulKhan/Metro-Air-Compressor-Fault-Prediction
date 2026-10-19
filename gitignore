@@ -1,0 +1,30 @@
+# Dataset (too large for GitHub, download separately)
+*.csv
+
+# Old/unused model artifacts (keep rf_model.pkl and columns.pkl)
+knn_model.pkl
+scaler.pkl
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
